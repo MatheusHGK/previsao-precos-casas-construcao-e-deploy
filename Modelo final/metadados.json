@@ -1,0 +1,250 @@
+{
+  "variacao": "v0_base",
+  "alvo": "log_price",
+  "modelo": "CatBoost",
+  "lr": 0.05,
+  "n_estimators": 620,
+  "max_depth": 8,
+  "variaveis": [
+    "bedrooms",
+    "bathrooms",
+    "sqft_living",
+    "sqft_lot",
+    "floors",
+    "waterfront",
+    "view",
+    "condition",
+    "grade",
+    "sqft_above",
+    "sqft_basement",
+    "yr_built",
+    "yr_renovated",
+    "lat",
+    "long",
+    "sqft_living15",
+    "sqft_lot15",
+    "house_age",
+    "was_renovated",
+    "yr_last_update",
+    "ppltn_qty",
+    "urbn_ppltn_qty",
+    "sbrbn_ppltn_qty",
+    "farm_ppltn_qty",
+    "non_farm_qty",
+    "medn_hshld_incm_amt",
+    "medn_incm_per_prsn_amt",
+    "hous_val_amt",
+    "edctn_less_than_9_qty",
+    "edctn_9_12_qty",
+    "edctn_high_schl_qty",
+    "edctn_some_clg_qty",
+    "edctn_assoc_dgre_qty",
+    "edctn_bchlr_dgre_qty",
+    "edctn_prfsnl_qty",
+    "per_urbn",
+    "per_sbrbn",
+    "per_farm",
+    "per_non_farm",
+    "per_less_than_9",
+    "per_9_to_12",
+    "per_hsd",
+    "per_some_clg",
+    "per_assoc",
+    "per_bchlr",
+    "per_prfsnl"
+  ],
+  "faixas_treino": {
+    "bedrooms": [
+      1.0,
+      11.0
+    ],
+    "bathrooms": [
+      0.5,
+      8.0
+    ],
+    "sqft_living": [
+      370.0,
+      12050.0
+    ],
+    "sqft_lot": [
+      520.0,
+      1651359.0
+    ],
+    "floors": [
+      1.0,
+      3.5
+    ],
+    "waterfront": [
+      0.0,
+      1.0
+    ],
+    "view": [
+      0.0,
+      4.0
+    ],
+    "condition": [
+      1.0,
+      5.0
+    ],
+    "grade": [
+      3.0,
+      13.0
+    ],
+    "sqft_above": [
+      370.0,
+      8570.0
+    ],
+    "sqft_basement": [
+      0.0,
+      4820.0
+    ],
+    "yr_built": [
+      1900.0,
+      2015.0
+    ],
+    "yr_renovated": [
+      0.0,
+      2015.0
+    ],
+    "lat": [
+      47.1559,
+      47.7776
+    ],
+    "long": [
+      -122.519,
+      -121.315
+    ],
+    "sqft_living15": [
+      399.0,
+      6210.0
+    ],
+    "sqft_lot15": [
+      659.0,
+      871200.0
+    ],
+    "house_age": [
+      0.0,
+      115.0
+    ],
+    "was_renovated": [
+      0.0,
+      1.0
+    ],
+    "yr_last_update": [
+      1900.0,
+      2015.0
+    ],
+    "ppltn_qty": [
+      3037.0,
+      64181.0
+    ],
+    "urbn_ppltn_qty": [
+      0.0,
+      64181.0
+    ],
+    "sbrbn_ppltn_qty": [
+      0.0,
+      11176.0
+    ],
+    "farm_ppltn_qty": [
+      0.0,
+      439.0
+    ],
+    "non_farm_qty": [
+      0.0,
+      9973.0
+    ],
+    "medn_hshld_incm_amt": [
+      32085.0,
+      132665.0
+    ],
+    "medn_incm_per_prsn_amt": [
+      17087.0,
+      81926.0
+    ],
+    "hous_val_amt": [
+      141500.0,
+      790300.0
+    ],
+    "edctn_less_than_9_qty": [
+      4.0,
+      3671.0
+    ],
+    "edctn_9_12_qty": [
+      51.0,
+      4483.0
+    ],
+    "edctn_high_schl_qty": [
+      160.0,
+      12241.0
+    ],
+    "edctn_some_clg_qty": [
+      359.0,
+      13680.0
+    ],
+    "edctn_assoc_dgre_qty": [
+      71.0,
+      3998.0
+    ],
+    "edctn_bchlr_dgre_qty": [
+      427.0,
+      14271.0
+    ],
+    "edctn_prfsnl_qty": [
+      186.0,
+      8891.0
+    ],
+    "per_urbn": [
+      0.0,
+      100.0
+    ],
+    "per_sbrbn": [
+      0.0,
+      81.0
+    ],
+    "per_farm": [
+      0.0,
+      2.0
+    ],
+    "per_non_farm": [
+      0.0,
+      98.0
+    ],
+    "per_less_than_9": [
+      0.0,
+      11.0
+    ],
+    "per_9_to_12": [
+      1.0,
+      11.0
+    ],
+    "per_hsd": [
+      5.0,
+      25.0
+    ],
+    "per_some_clg": [
+      11.0,
+      34.0
+    ],
+    "per_assoc": [
+      2.0,
+      7.0
+    ],
+    "per_bchlr": [
+      6.0,
+      39.0
+    ],
+    "per_prfsnl": [
+      2.0,
+      24.0
+    ]
+  },
+  "metricas": {
+    "treino_MAPE": 0.0927478069601985,
+    "cv_MAPE": 0.1133717760923911,
+    "teste_MAPE": 0.1149820836087046,
+    "teste_MAE": 61901.00759873059,
+    "teste_RMSE": 118358.46607842016,
+    "teste_R2": 0.908639795651056
+  }
+}
